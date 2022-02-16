@@ -1,0 +1,30 @@
+@import "../../partials/vars";
+
+.sidebar {
+    background-color: $secondary;
+    color: $grey-text;
+    font-size: 0.8rem;
+    min-width: 11rem;
+    max-width: 13rem;
+
+    ul.sidebar__items {
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        width: 100%;
+
+        li {
+            padding: 0.6rem 1rem;
+            border-bottom: 0.5px solid #e4e4e4;
+            cursor: pointer;
+
+            .sidebar__link {
+                color: $grey-text;
+            }
+        }
+    }
+
+    .sidebar__link--selected {
+        font-weight: 700;
+    }
+}

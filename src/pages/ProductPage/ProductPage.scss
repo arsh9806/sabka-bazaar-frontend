@@ -1,0 +1,28 @@
+@import '../../partials/vars';
+
+.product-page {
+    .accordion-button {
+        position: relative;
+        background-color: $primary;
+        color: white;
+
+        .accordion-icon {
+            position: absolute;
+            width: 1rem;
+            fill: white;
+            right: 1rem;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:focus-visible {
+            box-shadow: none;
+            outline: auto;
+            outline-color: black;
+        }
+        &::after {
+            content: none;
+        }
+    }
+
+}

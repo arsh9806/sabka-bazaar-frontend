@@ -1,0 +1,53 @@
+@import "../../partials/vars";
+.product-card {
+    border-bottom: 2px dotted #cfcfcf;
+    position: relative;
+    .product-card__heading {
+        height: 6rem;
+        font-weight: 800;
+        @media screen and (max-width: 768px) {
+            height: 4rem;
+        }
+
+    }
+
+    .product-card__descriptioncol {
+        height: 8rem;
+        @media screen and (max-width: 576px) {
+            height: auto;
+        }
+        .product-card__description {
+            font-size: 0.8rem;
+            background-color: $secondary;
+        }
+    }
+
+    .product-card__footer,
+    .product-card__action {
+        font-size: 0.9rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 90%;
+        display: flex;
+        width: 2px;
+        top: 50%;
+        border-radius: 50%;
+        filter: blur(2px);
+        z-index: -2;
+        background-color: rgba(228, 228, 228, 0.76);
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        right: -2px;
+        -webkit-filter: blur(2px);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}

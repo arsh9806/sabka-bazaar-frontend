@@ -1,0 +1,44 @@
+@import "../../partials/vars";
+
+.categories__item {
+    position: relative;
+    background-color: white;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        z-index: -1;
+        bottom: 6px;
+        background-color: black;
+        box-shadow: 0px 3px 6px 5px rgba(15, 15, 15, 0.45);
+        border-radius: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-border-radius: 30%;
+        -moz-border-radius: 30%;
+        -ms-border-radius: 30%;
+        -o-border-radius: 30%;
+    }
+    .categories__image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .w-fit-content {
+        width: fit-content;
+    }
+
+    .carousel-caption {
+        h3, p {
+
+            display: none;
+        }
+    }
+}
